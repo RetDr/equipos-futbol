@@ -11,7 +11,7 @@ app.get('/equipos', async (req, res) => {
     const db = await openDb();
     const equipos = await db.all('SELECT * FROM equipos');
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(equipos, null, 2)); // Formato con sangría
+    res.send(JSON.stringify(equipos, null, 2));
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
