@@ -1,0 +1,12 @@
+{
+  "nombre_objeto": "EquipoFutbol",
+  "descripcion": "Gestión y consulta de equipos de fútbol.",
+  "atributos": {
+    "id": { "tipo": "INTEGER", "descripcion": "ID único", "autoincremental": true },
+    "nombre": { "tipo": "TEXT", "descripcion": "Nombre del equipo" },
+    "liga": { "tipo": "TEXT", "descripcion": "Liga a la que pertenece" },
+    "puntos": { "tipo": "INTEGER", "descripcion": "Puntos en la liga" },
+    "goles_favor": { "tipo": "INTEGER", "descripcion": "Goles a favor" },
+    "goles_contra": { "tipo": "INTEGER", "descripcion": "Goles en contra" }
+  }
+}

@@ -1,0 +1,29 @@
+Proyecto: Backend de Gestión de Equipos de Fútbol (Docker/Node.js)
+Estudiante: Nestor Daniel Rodriguez Silva
+Fecha de entrega: 30 de octubre de 2025
+
+Repositorio GitHub:
+https://github.com/RetDr/equipos-futbol
+
+Imagen DockerHub:
+https://hub.docker.com/r/RetDr/equipos-futbol
+Comando para descargar: docker pull RetDr/equipos-futbol:1.0
+
+Objeto gestionado: Equipo de fútbol
+
+Endpoints principales:
+POST /equipos                    - Crear equipo
+GET /equipos                     - Listar todos los equipos
+GET /equipos/:id                 - Buscar por ID
+PUT /equipos/:id                 - Modificar equipo por ID
+DELETE /equipos/:id              - Eliminar equipo por ID
+GET /equipos/puntos/:min/:max    - Buscar equipos por rango de puntos
+GET /estadisticas/goles-por-liga - Estadística agrupada
+
+Base de datos: SQLite
+
+Cómo correr en Docker:
+1. Descargar la imagen:
+   docker pull RetDr/equipos-futbol:1.0
+2. Ejecutar el backend:
+   docker run -p 3000:3000 RetDr/equipos-futbol:1.0
